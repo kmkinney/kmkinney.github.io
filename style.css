@@ -2,14 +2,33 @@ body{
 	background-color:#f0ddd1;
 	font-size:20px;
 }
-h1{
+hr{
+	background-color:#674568;
+	border:none;
+	height: 1.5px;
+	max-width: 70%;
+}
+h1,h2,h3{
 	color : #674568;
 }
-h3{
-	color: #9b0c0f;
+a.button{
+	background-color: #674568;
+	color : #f0ddd1;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
 }
-
-/*Info Blurb*/
+a.button:hover{
+	background-color: #835985;
+}
+#image{
+	align-items: center;
+	margin-top: 20px;
+}
+img{
+	max-width: 70%;
+	height: auto;
+}
 
 
 
