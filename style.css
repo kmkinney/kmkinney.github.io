@@ -29,6 +29,13 @@ img{
 	max-width: 70%;
 	height: auto;
 }
-
-
+a.nav{
+	padding-left: 5%;
+	padding-right: 5%;
+	color: #674568;
+	text-decoration-color: #674568;
+}
+.info{
+	max-width: 70%;
+}
 
