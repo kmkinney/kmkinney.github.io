@@ -2,6 +2,38 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css"></link>
+	<script>
+		var end = new Date('12/19/2020 1:00 PM');
+		
+			var _second = 1000;
+			var _minute = _second * 60;
+			var _hour = _minute * 60;
+			var _day = _hour * 24;
+			var timer;
+		
+			function showRemaining() {
+				var now = new Date();
+				var distance = end - now;
+				if (distance < 0) {
+		
+					clearInterval(timer);
+					document.getElementById('countdown').innerHTML = 'EXPIRED!';
+		
+					return;
+				}
+				var days = Math.floor(distance / _day);
+				var hours = Math.floor((distance % _day) / _hour);
+				var minutes = Math.floor((distance % _hour) / _minute);
+				var seconds = Math.floor((distance % _minute) / _second);
+		
+				document.getElementById('countdown').innerHTML = days + 'days ';
+				document.getElementById('countdown').innerHTML += hours + 'hrs ';
+				document.getElementById('countdown').innerHTML += minutes + 'mins ';
+				document.getElementById('countdown').innerHTML += seconds + 'secs';
+			}
+		
+			timer = setInterval(showRemaining, 1000);
+		</script>
 </head>
 <body>
 	<center>
@@ -15,9 +47,11 @@
 			<a href="rsvp.html" class="nav">RSVP</a>
 		</div>
 		<hr></hr>
-		<h2>Broadcast Begins At</h2>
+		<h2>Broadcast Begins In</h2>
+		<div id="countdown"></div>
 		<h1>1:00 pm CST</h1>
 		<h2>December 19, 2020</h2>
+			
 		<!--h2>ZOOM LINK</h2>
 		<a href="https://us04web.zoom.us/j/2974906901?pwd=QkMvaTIwZ2lJR2w5RUZhY0U3MVBCUT09" class="button">Click to Join</a>
 		</br>

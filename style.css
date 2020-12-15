@@ -21,6 +21,13 @@ a.button{
 a.button:hover{
 	background-color: #835985;
 }
+#countdown{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #674568;
+	font-weight: bold;
+	font-size: larger;
+}
 #image{
 	align-items: center;
 	margin-top: 20px;
