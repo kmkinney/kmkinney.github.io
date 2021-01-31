@@ -1,69 +1,24 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="eng">
 <head>
-	<link rel="stylesheet" href="style.css"></link>
-	<script>
-		var end = new Date('12/19/2020 1:00 PM');
-		
-			var _second = 1000;
-			var _minute = _second * 60;
-			var _hour = _minute * 60;
-			var _day = _hour * 24;
-			var timer;
-		
-			function showRemaining() {
-				var now = new Date();
-				var distance = end - now;
-				if (distance < 0) {
-		
-					clearInterval(timer);
-					document.getElementById('countdown').innerHTML = 'EXPIRED!';
-		
-					return;
-				}
-				var days = Math.floor(distance / _day);
-				var hours = Math.floor((distance % _day) / _hour);
-				var minutes = Math.floor((distance % _hour) / _minute);
-				var seconds = Math.floor((distance % _minute) / _second);
-		
-				document.getElementById('countdown').innerHTML = days + 'days ';
-				document.getElementById('countdown').innerHTML += hours + 'hrs ';
-				document.getElementById('countdown').innerHTML += minutes + 'mins ';
-				document.getElementById('countdown').innerHTML += seconds + 'secs';
-			}
-		
-			timer = setInterval(showRemaining, 1000);
-		</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kevin M Kinney</title>
 </head>
 <body>
-	<center>
-		<h3>
-			Our website has changed a little as the date is getting closer!!!!
-		</h3>
-		<h1>Kevin & Gretchen's Wedding</h1>
-		<div class="nav">
-			<a href="index.html" class="nav">Zoom Details</a>
-			<a href="reception.html" class="nav">Reception Details</a>
-			<a href="rsvp.html" class="nav">RSVP</a>
-		</div>
-		<hr></hr>
-		<h2>Broadcast Begins In</h2>
-		<div id="countdown"></div>
-		<h1>1:00 pm CST</h1>
-		<h2>December 19, 2020</h2>
-			
-		<!--h2>ZOOM LINK</h2>
-		<a href="https://us04web.zoom.us/j/2974906901?pwd=QkMvaTIwZ2lJR2w5RUZhY0U3MVBCUT09" class="button">Click to Join</a>
-		</br>
-		<h3>Meeting ID: 297 490 6901</h3>	
-		<p>URL: https://us04web.zoom.us/j/2974906901?pwd=QkMvaTIwZ2lJR2w5RUZhY0U3MVBCUT09</p-->
-		<a href="https://amazon.com/wedding/share/kevin-and-gretchen" class="button">Click Here for Registry</a>
-		</br>
-		<div></div>
-		<div id="image">
-			<img src="kgimg.jpg"></img>
-		</div>
-	</center>
-	
+    <div class="container.fluid bg-secondary">
+        <h1 class="text-center">Kevin M Kinney</h1>
+    </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
