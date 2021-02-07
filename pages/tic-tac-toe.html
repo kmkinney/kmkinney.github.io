@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="bg-dark">
+    <!--navbar-->
+    <nav class="navbar sticky-top navbar-expand navbar-dark bg-primary">
+        <a class="navbar-brand" style="font-size: 1.6em" href="../index.html">KK</a>
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" style="font-size: 1.5em" href="about.html">About Me</a>
+            <a class="nav-item nav-link active" style="font-size: 1.5em" href="games.html">Games</a>
+            <a class="nav-item nav-link active" style="font-size: 1.5em" href="https://www.facebook.com"><i class="bi bi-facebook text-white"></i></a>
+            <a class="nav-item nav-link active" style="font-size: 1.5em" href="https://www.github.com/kmkinney"><i class="bi bi-github text-white"></i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <h1 class="mx-auto text-primary">Tic-Tac-Toe</h1>
+        </div>
+        <div class="row text-white">
+            <div class="mx-auto col-auto" id="players">
+            </div>  
+        </div>
+        <div class="row text-white">
+            <div class="mx-auto col-auto" id="turnDisp">
+            </div>  
+        </div>
+        <form id="inputs">
+            <div class="text-white form-group row">
+                <div class="col-1 offset-2">
+                    <label for="p1">X</label>
+                </div>
+                <div class="col-3">
+                    <input class="form-control" id="p1" type="text" placeholder="Player 1">
+                </div>
+                <div class="col-1">
+                    <label for="p2">O</label>
+                </div>
+                <div class="col-3">
+                    <input class="form-control" id="p2" type="text" placeholder="Player 2">
+                </div>
+            </div>
+            <div class="mt-3 row">
+                <button class="mx-auto col-2 btn-primary btn-lg" id="playButton">Play</button>
+            </div>
+        </form>
+        <div class="row mb-2">
+            <div class="col-auto mx-auto text-white" id="playAgain"></div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-auto mx-auto text-white" id="playAgainBtn"></div>
+        </div>
+        <div class="row">
+            <canvas class="col-auto mx-auto" id="gameWindow" height="300px" width="300px"></canvas>
+        </div>
+    </div>
+    <!--Script-->
+    <script src="../js/tic-tac-toe.js"></script> 
+</body>
+</html>
