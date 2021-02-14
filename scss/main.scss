@@ -8,7 +8,24 @@ $theme-colors: (
 .card-hover:hover{
     opacity: 0.8;
 }
-
+.card-img-top:hover{
+    opacity: 0.8;
+}
 .nav-item:hover{
     opacity: 0.8;
+}
+
+.video-window{
+    border-radius: 15px;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+}
+
+//lines
+hr{
+    border: #199C77 1px solid;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
