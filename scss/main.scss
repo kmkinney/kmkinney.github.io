@@ -11,7 +11,21 @@ $theme-colors: (
 .card-img-top:hover{
     opacity: 0.8;
 }
-.nav-item:hover{
+.navbar-brand{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #199C77;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.navbar-brand:hover{
+    opacity: 0.8;
+}
+.nav-link:hover{
+    opacity: 0.8;
+}
+.icon-link:hover{
     opacity: 0.8;
 }
 
