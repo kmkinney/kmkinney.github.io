@@ -1,0 +1,45 @@
+$theme-colors: (
+    "primary": #199C77
+);
+@import "bootstrap/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+//CUSTOM CSS
+.card-hover:hover{
+    opacity: 0.8;
+}
+.card-img-top:hover{
+    opacity: 0.8;
+}
+.navbar-brand{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #199C77;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.navbar-brand:hover{
+    opacity: 0.8;
+}
+.nav-link:hover{
+    opacity: 0.8;
+}
+.icon-link:hover{
+    opacity: 0.8;
+}
+
+.video-window{
+    border-radius: 15px;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+}
+
+//lines
+hr{
+    border: #199C77 1px solid;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}

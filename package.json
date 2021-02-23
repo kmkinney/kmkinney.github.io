@@ -1,0 +1,23 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmkinney/kmkinney.github.io.git"
+  },
+  "author": "Kevin Kinney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmkinney/kmkinney.github.io/issues"
+  },
+  "homepage": "https://github.com/kmkinney/kmkinney.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1"
+  }
+}
